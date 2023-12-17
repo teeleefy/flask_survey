@@ -9,6 +9,11 @@
 </head>
 <body>
     <nav>Satisfaction Survey</nav>
-    <main>{% block content%}{% endblock %}</main>
+    <main>
+        {% for alert in get_flashed_messages() %}
+        <p>{{alert}}</p>
+        {% endfor %}
+        {% block content%}{% endblock %}
+    </main>
 </body>
 </html>

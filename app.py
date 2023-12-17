@@ -56,7 +56,7 @@ def show_question(num):
     
     if (total_answered != num):
         # Trying to access questions out of order.
-        flash(f"Invalid question number: {num}. Please continue to Question #{next_question}")
+        flash(f"You do not currently have access to Question #{num}. Please answer Question #{next_question +1}.")
         return redirect(f"/questions/{next_question}")
     
     UI_question = num + 1
