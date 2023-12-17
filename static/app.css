@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: green;
+    color: white;
+    font-size: 3rem;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+main{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 70%;
+    height: 250px;
+    color: black;
+    padding: 50px;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.3);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+
+li {
+    text-align: left;
+}
