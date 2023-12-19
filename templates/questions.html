@@ -3,6 +3,7 @@
 <h1>Question {{UI_question}} out of {{total}}</h1> 
 <h2>{{question}}</h2>
 <form action="/answer" method="POST">
+    <input type= "hidden" name="index" value="{{index}}">
     {% for choice in choices %}
     <input type="radio" name="answer" value="{{ choice }}">{{ choice }}</input>
     {% endfor %}
